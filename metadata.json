@@ -1,0 +1,6 @@
+{
+  "name": "AL Zuhra Academy Reader",
+  "description": "Premium offline document reader app for teachers and students of AL Zuhra Academy.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

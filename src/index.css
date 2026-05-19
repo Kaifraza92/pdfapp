@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap");
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-brand-emerald: #064e3b;
+  --color-brand-emerald-light: #059669;
+  --color-brand-cream: #fbfbf9;
+  --color-brand-black: #18181b;
+  --color-brand-black-light: #27272a;
+  --color-brand-gold: #d4af37;
+  --color-brand-gold-muted: #e7ca70;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-arabic: "Amiri", serif;
+}
+
+@layer base {
+  :root {
+    --bg-color: var(--color-brand-cream);
+    --text-color: var(--color-brand-black);
+    --surface-color: #ffffff;
+    --border-color: #e5e7eb;
+  }
+  .dark {
+    --bg-color: var(--color-brand-black);
+    --text-color: var(--color-brand-cream);
+    --surface-color: var(--color-brand-black-light);
+    --border-color: #3f3f46;
+  }
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+}
